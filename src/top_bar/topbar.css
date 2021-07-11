@@ -9,10 +9,46 @@ Style the top menu bar */
   display: flex;
   align-items: center;
 }
+/*
+Style the left + right items of the top menu bar. */
 .topLeft,
 .topRight {
   flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*
+The social media icons on the top menu bar. */
+.topIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: cornflowerblue;
+  cursor: pointer;
 }
 .topCenter {
   flex: 6;
+}
+/*
+User's image. */
+.topImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/*
+Format the navigational menu items*/
+.topList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.topListItem {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.topSearchIcon {
+  font-size: 20px;
+  margin-left: 15px;
 }
