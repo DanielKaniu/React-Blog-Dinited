@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import "./topbar.css";
 
 export default function topBar() {
-  const user = true;
+  const user = false;
   return (
     <div className="top">
       <div className="topLeft">
@@ -11,19 +12,51 @@ export default function topBar() {
       </div>
       <div className="topCenter">
         <ul className="topList">
-          <li className="topListItem">HOME</li>
-          <li className="topListItem">ABOUT</li>
-          <li className="topListItem">CONTACT</li>
-          <li className="topListItem">WRITE</li>
-          <li className="topListItem">LOGOUT</li>
+          <li className="topListItem">
+            <Link className="link" to="/">
+              HOME
+            </Link>
+          </li>
+          <li className="topListItem">
+            <Link className="link" to="/">
+              ABOUT
+            </Link>
+          </li>
+          <li className="topListItem">
+            <Link className="link" to="/">
+              CONTACT
+            </Link>
+          </li>
+          <li className="topListItem">
+            <Link className="link" to="/write">
+              WRITE
+            </Link>
+          </li>
+          <li className="topListItem">{user && "LOGOUT"}</li>
         </ul>
       </div>
       <div className="topRight">
-        <img
-          className="topImage"
-          src="https://images.pexels.com/photos/3193739/pexels-photo-3193739.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          alt="user"
-        />
+        {user ? (
+          <img
+            className="topImage"
+            src="https://images.pexels.com/photos/3193739/pexels-photo-3193739.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="user"
+          />
+        ) : (
+          <ul className="topList">
+            <li className="topListItem">
+              <Link className="link" to="/login">
+                LOGIN
+              </Link>
+            </li>
+            <li className="topListItem">
+              <Link className="link" to="/register">
+                REGISTER
+              </Link>
+            </li>
+          </ul>
+        )}
+
         <i className="topSearchIcon fas fa-search"></i>
       </div>
     </div>
