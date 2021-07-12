@@ -28,6 +28,17 @@
 .singlePostIcon:last-child {
   color: green;
 }
-.singlePostInfo{
-    
+.singlePostInfo {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.singlePostDesc {
+  font-size: 18px;
+  line-height: 20px;
+}
+.singlePostDesc::first-letter {
+  margin-left: 20px;
+  font-size: 25px;
 }

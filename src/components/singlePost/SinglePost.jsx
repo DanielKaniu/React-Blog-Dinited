@@ -22,7 +22,7 @@ export default function SinglePost() {
           </span>
           <span className="singlePostDate"> 45 minutes ago </span>
         </div>
-        <div>
+        <div className="singlePostDesc">
           The wildebeest, seemingly assembled from the wreckage of all the other
           plains species, is one of Africa’s most charismatic creatures. Despite
           the appearance of an evolutionary calamity, it is also one of the most
