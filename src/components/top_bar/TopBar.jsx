@@ -1,6 +1,7 @@
 import "./topbar.css";
 
 export default function topBar() {
+  const user = true;
   return (
     <div className="top">
       <div className="topLeft">

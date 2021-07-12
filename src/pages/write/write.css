@@ -38,5 +38,11 @@
   background-color: lightgreen;
   border-radius: 10px;
   cursor: pointer;
-  
+}
+.writeImg {
+  width: 70vw;
+  height: 250px;
+  padding-left: 150px;
+  object-fit: cover;
+  border-radius: 10px;
 }
