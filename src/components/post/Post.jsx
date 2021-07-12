@@ -17,6 +17,15 @@ export default function Post() {
         <hr />
         <span className="postDate">30 minutes ago</span>
       </div>
+      <div className="postDesc">
+        The wildebeest, seemingly assembled from the wreckage of all the other
+        plains species, is one of Africa’s most charismatic creatures. Despite
+        the appearance of an evolutionary calamity, it is also one of the most
+        successful. When herds around two million strong gather together to
+        migrate between the southern parts of the Serengeti National Park and
+        the Masai Mara Game Reserve, you find one of the most dramatic wildlife
+        events on the planet.
+      </div>
     </div>
   );
 }

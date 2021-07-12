@@ -8,6 +8,7 @@ Style the top menu bar */
   top: 0;
   display: flex;
   align-items: center;
+  z-index: 2;
 }
 /*
 Style the left + right items of the top menu bar. */

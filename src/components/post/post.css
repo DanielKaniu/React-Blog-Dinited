@@ -33,3 +33,13 @@
   color: darkturquoise;
   margin-top: 10px;
 }
+.postDesc {
+  line-height: 25px;
+  font-size: 15px;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
